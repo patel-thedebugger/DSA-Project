@@ -30,3 +30,307 @@ This implementation avoids recursion and simulates the backtracking process usin
    ```bash
    git clone https://github.com/your-username/nqueen-project.git
    cd nqueen-project
+   ```
+## 📺 Example
+
+      Enter the size : 4
+      
+      The current location is -1-1
+      
+      
+                      Q  *  .  .
+                      .  .  .  .
+                      .  .  .  .
+                      .  .  .  .
+      
+      The current location is 01
+      <
+      
+      
+                      Q  .  .  .
+                      .  *  .  .
+                      .  .  .  .
+                      .  .  .  .
+      
+      The current location is 11
+      </
+      
+      
+                      Q  .  .  .
+                      .  .  .  .
+                      .  *  .  .
+                      .  .  .  .
+      
+      The current location is 21
+      
+      
+                      Q  .  .  .
+                      .  .  .  .
+                      .  Q  .  .
+                      .  *  .  .
+      
+      The current location is 31
+      
+      
+                      Q  .  *  .
+                      .  .  .  .
+                      .  Q  .  .
+                      .  .  .  .
+      
+      The current location is 02
+      <
+      
+      
+                      Q  .  .  .
+                      .  .  *  .
+                      .  Q  .  .
+                      .  .  .  .
+      
+      The current location is 12
+      diagonally left side
+      
+      
+                      Q  .  .  .
+                      .  .  .  .
+                      .  Q  *  .
+                      .  .  .  .
+      
+      The current location is 22
+      <
+      
+      
+                      Q  .  .  .
+                      .  .  .  .
+                      .  Q  .  .
+                      .  .  *  .
+      
+      The current location is 32
+      </
+      1 -> 32
+      2 -> 22
+      3 -> 12
+      4 -> 02
+      5 -> 31
+      6 -> 21
+      
+      
+                      Q  .  .  .
+                      .  .  .  .
+                      .  .  .  .
+                      .  *  .  .
+      
+      The current location is 31
+      
+      
+                      Q  .  *  .
+                      .  .  .  .
+                      .  .  .  .
+                      .  Q  .  .
+      
+      The current location is 02
+      <
+      
+      
+                      Q  .  .  .
+                      .  .  *  .
+                      .  .  .  .
+                      .  Q  .  .
+      
+      The current location is 12
+      
+      
+                      Q  .  .  .
+                      .  .  Q  .
+                      .  .  *  .
+                      .  Q  .  .
+      
+      The current location is 22
+      
+      
+                      Q  .  .  *
+                      .  .  Q  .
+                      .  .  .  .
+                      .  Q  .  .
+      
+      The current location is 03
+      <
+      
+      
+                      Q  .  .  .
+                      .  .  Q  *
+                      .  .  .  .
+                      .  Q  .  .
+      
+      The current location is 13
+      <
+      
+      
+                      Q  .  .  .
+                      .  .  Q  .
+                      .  .  .  *
+                      .  Q  .  .
+      
+      The current location is 23
+      </
+      
+      
+                      Q  .  .  .
+                      .  .  Q  .
+                      .  .  .  .
+                      .  Q  .  *
+      
+      The current location is 33
+      <
+      1 -> 33
+      2 -> 23
+      3 -> 13
+      4 -> 03
+      5 -> 32
+      6 -> 22
+      7 -> 12
+      
+      
+                      Q  .  .  .
+                      .  .  .  .
+                      .  .  *  .
+                      .  Q  .  .
+      
+      The current location is 22
+      </
+      
+      
+                      Q  .  .  .
+                      .  .  .  .
+                      .  .  .  .
+                      .  Q  *  .
+      
+      The current location is 32
+      <
+      1 -> 32
+      2 -> 22
+      3 -> 12
+      4 -> 02
+      5 -> 31
+      1 -> 31
+      2 -> 21
+      3 -> 11
+      4 -> 01
+      5 -> 30
+      6 -> 20
+      7 -> 10
+      8 -> 00
+      
+      
+                      .  .  .  .
+                      *  .  .  .
+                      .  .  .  .
+                      .  .  .  .
+      
+      The current location is 10
+      
+      
+                      .  .  .  .
+                      Q  .  .  .
+                      *  .  .  .
+                      .  .  .  .
+      
+      The current location is 20
+      
+      
+                      .  *  .  .
+                      Q  .  .  .
+                      .  .  .  .
+                      .  .  .  .
+      
+      The current location is 01
+      diagonally left side
+      
+      
+                      .  .  .  .
+                      Q  *  .  .
+                      .  .  .  .
+                      .  .  .  .
+      
+      The current location is 11
+      <
+      
+      
+                      .  .  .  .
+                      Q  .  .  .
+                      .  *  .  .
+                      .  .  .  .
+      
+      The current location is 21
+      </
+      
+      
+                      .  .  .  .
+                      Q  .  .  .
+                      .  .  .  .
+                      .  *  .  .
+      
+      The current location is 31
+      
+      
+                      .  .  *  .
+                      Q  .  .  .
+                      .  .  .  .
+                      .  Q  .  .
+      
+      The current location is 02
+      
+      
+                      .  .  Q  .
+                      Q  .  *  .
+                      .  .  .  .
+                      .  Q  .  .
+      
+      The current location is 12
+      
+      
+                      .  .  Q  *
+                      Q  .  .  .
+                      .  .  .  .
+                      .  Q  .  .
+      
+      The current location is 03
+      <
+      
+      
+                      .  .  Q  .
+                      Q  .  .  *
+                      .  .  .  .
+                      .  Q  .  .
+      
+      The current location is 13
+      <
+      
+      
+                      .  .  Q  .
+                      Q  .  .  .
+                      .  .  .  *
+                      .  Q  .  .
+      
+      The current location is 23
+      
+      
+                      .  .  Q  .
+                      Q  .  .  .
+                      .  .  .  Q
+                      .  Q  .  *
+      
+      
+      The required matrix is :
+      
+                      .  .  Q  .
+                      Q  .  .  .
+                      .  .  .  Q
+                      .  Q  .  *
+      
+      Data structure : 202040301
+      MINI PROJECT
+      Title : N Queen Problem using Backtracking Algorithm and Stack
+      Developed By :
+               Garv Patel (12302130501014)
+      
+      ===Code Execution Successfully===
